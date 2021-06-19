@@ -1,0 +1,20 @@
+{
+	"app":
+	{
+		"domain": "http://192.168.0.3:3000"
+	},
+	"server":
+	{
+		"domain": "192.168.0.3",
+		"port": 5000
+	},
+	"db":
+	{
+		"cluster": "cluster0",
+		"name": "fizzbuzzjazz",
+		"user": "2qiFxaSq7wDV3Jxm",
+		"password": "ASE3I2QUH7oTrlFF",
+		"server": "xmepj",
+		"port": 5000
+	}
+}

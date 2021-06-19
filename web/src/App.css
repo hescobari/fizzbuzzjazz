@@ -1,0 +1,188 @@
+:root
+{
+	--background: #212121;
+	--gray: #cccccc;
+
+	--scrollColor: #bbbbbb;
+	--scrollBGColor: #dddddd;
+}
+
+*
+{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body
+{
+	background-color: var(--background);
+}
+
+input:focus
+{
+    outline: none;
+	border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.blue
+{
+	color: skyblue
+}
+
+.header
+{
+	padding: 2rem;
+	text-align: center;
+}
+
+.header h1
+{
+	padding-bottom: 2rem;
+	text-align: center;
+	font-size: 5rem;
+	color: salmon;
+}
+
+.header h3
+{
+	padding-bottom: 0.5rem;
+	font-size: 2rem;
+	color: var(--gray);
+}
+
+.header input
+{
+	background-color: var(--background);
+	border: none;
+	border-bottom: solid 2px var(--gray);
+	width: 150px;
+	padding: 0px 12px;
+	font-size: 3rem;
+	color: #666666;
+	text-align: center;
+}
+
+.header button
+{
+	background-color: transparent;
+	border: none;
+	margin-left: 25px;
+	font-size: 2rem;
+	cursor: pointer;
+	color: aquamarine;
+}
+
+.content
+{
+	text-align: center;
+}
+
+.content .section
+{
+	width: calc(100% - 100px);
+	height: 360px;
+	margin: 0px 50px 25px;
+	background-color: #333333;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+@media screen and (min-width: 768px)
+{
+	.content .section
+	{
+		display: inline-block;
+		height: calc(100vh - 369px);
+		width: 25%;
+		margin-bottom: 25px;
+		vertical-align: top;
+	}
+
+	.content .section:last-child
+	{
+		margin-left: 72px;
+	}
+}
+
+.content .section .title
+{
+	display: block;
+	color: aquamarine;
+	padding: 24px;
+	font-size: 2em;
+}
+
+.content .section div
+{
+	color: var(--gray);
+	font-size: 1.5em;
+	margin-bottom: 8px;
+}
+
+.content .section div.blue
+{
+	color: skyblue
+}
+
+.content .section .log
+{
+	text-align: left;
+	padding: 0px 24px 12px;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+.content .section .log label
+{
+	display: block;
+	cursor: pointer;
+}
+
+.footer
+{
+	text-align: center;
+	padding-bottom: 25px;
+	color: var(--gray);
+}
+
+/****************************
+*           scroll	        *
+****************************/
+*
+{
+	scrollbar-color: var(--scrollColor) transparent;
+}
+
+*::-webkit-scrollbar
+{
+	width: 10px;
+	height: 10px;
+}
+ 
+*::-webkit-scrollbar-track
+{
+	background: var(--scrollBGColor);
+}
+ 
+*::-webkit-scrollbar-thumb
+{
+	background: var(--scrollColor);
+}
+
+textarea::-webkit-scrollbar
+{
+	width: 0px;
+}
